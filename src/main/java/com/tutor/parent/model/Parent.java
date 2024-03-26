@@ -1,2 +1,4 @@
-package com.tutor.parent.model;public class Parent {
+package com.tutor.parent.model;
+
+public class Parent {
 }
