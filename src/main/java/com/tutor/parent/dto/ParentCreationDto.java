@@ -4,5 +4,7 @@ import lombok.Data;
 
 @Data
 public class ParentCreationDto {
-    private final String name;
+
+    private String name;
+    private String telephoneNumber;
 }
