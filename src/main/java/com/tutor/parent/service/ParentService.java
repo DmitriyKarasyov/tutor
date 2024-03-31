@@ -6,4 +6,6 @@ import com.tutor.parent.dto.ParentDto;
 public interface ParentService {
 
     ParentDto addParent(ParentCreationDto parentCreationDto);
+
+    ParentDto updateParent(ParentDto parentDto, Integer parentId);
 }
