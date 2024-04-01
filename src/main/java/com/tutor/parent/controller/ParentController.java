@@ -23,7 +23,7 @@ public class ParentController {
     }
 
     @PatchMapping("/{parentId}")
-    public ParentDto updateParent(@RequestBody ParentDto, @PathVariable Integer parentId) {
-
+    public ParentDto updateParent(@RequestBody ParentDto parentDto, @PathVariable Integer parentId) {
+        return service.updateParent(parentDto, parentId);
     }
 }

@@ -3,6 +3,7 @@ package com.tutor.parent.service;
 import com.tutor.parent.dto.ParentCreationDto;
 import com.tutor.parent.dto.ParentDto;
 import com.tutor.parent.mapper.ParentMapper;
+import com.tutor.parent.model.Parent;
 import com.tutor.parent.repository.ParentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,6 +26,13 @@ public class ParentServiceImpl implements ParentService {
 
     @Override
     public ParentDto updateParent(ParentDto parentDto, Integer parentId) {
-        return null;
+        Parent savedParent = repository.getReferenceById(parentId);
+        if (parentDto.getName() != null && !parentDto.getName().isBlank()) {
+            savedParent.setName(parentDto.getName());
+        }
+        if (parentDto.getTelephoneNumber() != null && !parentDto.getTelephoneNumber().isBlank()) {
+            savedParent.setTelephoneNumber(parentDto.getTelephoneNumber());
+        }
+        return mapper.makeParentDto(repository.save(savedParent));
     }
 }
