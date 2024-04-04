@@ -8,4 +8,6 @@ public interface ParentService {
     ParentDto addParent(ParentCreationDto parentCreationDto);
 
     ParentDto updateParent(ParentDto parentDto, Integer parentId);
+
+    ParentDto getParent(Integer parentId);
 }

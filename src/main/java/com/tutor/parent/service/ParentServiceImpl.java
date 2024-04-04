@@ -35,4 +35,9 @@ public class ParentServiceImpl implements ParentService {
         }
         return mapper.makeParentDto(repository.save(savedParent));
     }
+
+    @Override
+    public ParentDto getParent(Integer parentId) {
+        return mapper.makeParentDto(repository.getReferenceById(parentId));
+    }
 }

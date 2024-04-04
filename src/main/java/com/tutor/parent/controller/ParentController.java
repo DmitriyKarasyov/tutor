@@ -26,4 +26,9 @@ public class ParentController {
     public ParentDto updateParent(@RequestBody ParentDto parentDto, @PathVariable Integer parentId) {
         return service.updateParent(parentDto, parentId);
     }
+
+    @GetMapping("/{parentId}")
+    public ParentDto getParent(@PathVariable Integer parentId) {
+        return service.getParent(parentId);
+    }
 }
