@@ -20,7 +20,6 @@ public class ParentMapper {
 
     public ParentDto makeParentDto(Parent parent) {
         return ParentDto.builder()
-                .id(parent.getId())
                 .name(parent.getName())
                 .telephoneNumber(parent.getTelephoneNumber())
                 .students(parent.getStudents().stream()

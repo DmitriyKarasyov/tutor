@@ -9,7 +9,6 @@ import java.util.List;
 @Builder
 public class ParentDto {
 
-    private Integer id;
     private String name;
     private String telephoneNumber;
     private List<Integer> students;

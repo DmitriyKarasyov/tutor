@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc0205a5-03b5-4491-a172-4023865b4d12" name="Changes" comment="edit parent update">
+    <list default="true" id="fc0205a5-03b5-4491-a172-4023865b4d12" name="Changes" comment="add getParent">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutor/lesson/model/Lesson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutor/student/dto/StudentCreationDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/parent/dto/ParentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/parent/dto/ParentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/parent/mapper/ParentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/parent/mapper/ParentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/student/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/student/model/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Acer/dev/tutor/pom.xml"
+    "last_opened_file_path": "C:/Users/Acer/dev/java-shareit/pom.xml"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -90,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712002962826</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add getParent">
+      <created>1712215793040</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712215793041</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +122,7 @@
     <MESSAGE value="add Parent update" />
     <MESSAGE value="add list of students to Parent" />
     <MESSAGE value="edit parent update" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit parent update" />
+    <MESSAGE value="add getParent" />
+    <option name="LAST_COMMIT_MESSAGE" value="add getParent" />
   </component>
 </project>
