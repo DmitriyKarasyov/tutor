@@ -17,9 +17,9 @@ public class ParentController {
         this.service = service;
     }
 
-    @PostMapping
-    public ParentDto addParent(@RequestBody ParentCreationDto parentDto) {
-        return service.addParent(parentDto);
+    @PostMapping("/{studentId}")
+    public ParentDto addParent(@RequestBody ParentCreationDto parentDto, @PathVariable Integer studentId) {
+        return service.addParent(parentDto, studentId);
     }
 
     @PatchMapping("/{parentId}")

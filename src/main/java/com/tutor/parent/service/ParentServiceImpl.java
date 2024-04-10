@@ -20,8 +20,8 @@ public class ParentServiceImpl implements ParentService {
         this.mapper = mapper;
     }
     @Override
-    public ParentDto addParent(ParentCreationDto parentCreationDto) {
-        return mapper.makeParentDto(repository.save(mapper.makeParent(parentCreationDto)));
+    public ParentDto addParent(ParentCreationDto parentCreationDto, Integer studentId) {
+        return mapper.makeParentDto(repository.save(mapper.makeParent(parentCreationDto, studentId)));
     }
 
     @Override

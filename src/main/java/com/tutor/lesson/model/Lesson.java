@@ -9,4 +9,5 @@ public class Lesson {
 
     private LocalDateTime start;
     private LocalDateTime end;
+    private String description;
 }
