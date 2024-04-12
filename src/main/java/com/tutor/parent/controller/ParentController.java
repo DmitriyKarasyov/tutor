@@ -31,4 +31,9 @@ public class ParentController {
     public ParentDto getParent(@PathVariable Integer parentId) {
         return service.getParent(parentId);
     }
+
+    @DeleteMapping("/{parentId}")
+    public void deleteParent(@PathVariable Integer parentId) {
+        service.deleteParent(parentId);
+    }
 }

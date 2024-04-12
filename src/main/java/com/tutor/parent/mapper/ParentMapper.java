@@ -3,6 +3,7 @@ package com.tutor.parent.mapper;
 import com.tutor.parent.dto.ParentCreationDto;
 import com.tutor.parent.dto.ParentDto;
 import com.tutor.parent.model.Parent;
+import com.tutor.student.dto.StudentDto;
 import com.tutor.student.model.Student;
 import com.tutor.student.service.StudentService;
 import org.springframework.stereotype.Service;
@@ -20,15 +21,15 @@ public class ParentMapper {
         this.studentService = studentService;
     }
 
-    public Parent makeParent(ParentCreationDto parentCreationDto, Integer studentId) {
+    public static Parent makeParent(ParentCreationDto parentCreationDto, Student student) {
         return Parent.builder()
                 .name(parentCreationDto.getName())
                 .telephoneNumber(parentCreationDto.getTelephoneNumber())
-                .students(new ArrayList<>(List.of(studentService.getStudent(studentId))))
+                .students(new ArrayList<>(List.of(student)))
                 .build();
     }
 
-    public ParentDto makeParentDto(Parent parent) {
+    public static ParentDto makeParentDto(Parent parent) {
         return ParentDto.builder()
                 .name(parent.getName())
                 .telephoneNumber(parent.getTelephoneNumber())

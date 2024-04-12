@@ -1,15 +1,15 @@
-package com.tutor.student.model;
+package com.tutor.student.dto;
 
-import com.tutor.parent.model.Parent;
+import com.tutor.parent.dto.ParentDto;
 import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Builder
-public class Student {
+public class StudentDto {
 
     private Integer id;
     private String name;
     private String telephoneNumber;
-    private Parent parent;
+    private ParentDto parentDto;
 }

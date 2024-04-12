@@ -10,4 +10,6 @@ public interface ParentService {
     ParentDto updateParent(ParentDto parentDto, Integer parentId);
 
     ParentDto getParent(Integer parentId);
+
+    void deleteParent(Integer parentId);
 }
