@@ -3,14 +3,13 @@ package com.tutor.student.controller;
 import com.tutor.student.dto.StudentCreationDto;
 import com.tutor.student.dto.StudentDto;
 import com.tutor.student.service.StudentService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/student")
+@Slf4j
 public class StudentController {
 
     private final StudentService service;
@@ -22,6 +21,13 @@ public class StudentController {
 
     @PostMapping
     public StudentDto addStudent(@RequestBody StudentCreationDto studentCreationDto) {
+        log.info("POST new student: {}", studentCreationDto);
         return service.addStudent(studentCreationDto);
+    }
+
+    @GetMapping("/{studentId}")
+    public StudentDto getStudent(@PathVariable Integer studentId) {
+        log.info("GET student with id={}", studentId);
+        return service.getStudent(studentId);
     }
 }

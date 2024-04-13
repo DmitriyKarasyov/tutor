@@ -20,7 +20,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student getStudent(Integer studentId) {
-        return studentRepository.getReferenceById(studentId);
+    public StudentDto getStudent(Integer studentId) {
+        return StudentMapper.makeStudentDto(studentRepository.getReferenceById(studentId));
     }
 }
