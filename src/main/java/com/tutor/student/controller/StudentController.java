@@ -30,4 +30,10 @@ public class StudentController {
         log.info("GET student with id={}", studentId);
         return service.getStudent(studentId);
     }
+
+    @PatchMapping("/{studentId}")
+    public StudentDto updateStudent(@PathVariable Integer studentId, @RequestBody StudentDto studentDto) {
+        log.info("PATCH student with id={}, studentDto: {}", studentId, studentDto);
+        return service.updateStudent(studentId, studentDto);
+    }
 }

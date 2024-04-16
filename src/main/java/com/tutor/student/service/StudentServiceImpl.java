@@ -23,4 +23,17 @@ public class StudentServiceImpl implements StudentService {
     public StudentDto getStudent(Integer studentId) {
         return StudentMapper.makeStudentDto(studentRepository.getReferenceById(studentId));
     }
+
+    @Override
+    public StudentDto updateStudent(Integer studentId, StudentDto studentDto) {
+        Student savedStudent = studentRepository.getReferenceById(studentId);
+        if (studentDto.getName() != null && !studentDto.getName().isBlank()) {
+            savedStudent.setName(studentDto.getName());
+        }
+        if (studentDto.getTelephoneNumber() != null && !studentDto.getTelephoneNumber().isBlank()) {
+            savedStudent.setTelephoneNumber(studentDto.getTelephoneNumber());
+        }
+        studentRepository.save(savedStudent);
+        return StudentMapper.makeStudentDto(savedStudent);
+    }
 }

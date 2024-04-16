@@ -8,4 +8,6 @@ public interface StudentService {
     StudentDto addStudent(StudentCreationDto studentCreationDto);
 
     StudentDto getStudent(Integer studentId);
+
+    StudentDto updateStudent(Integer studentId, StudentDto studentDto);
 }
