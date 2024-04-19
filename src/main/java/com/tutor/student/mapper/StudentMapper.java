@@ -13,6 +13,10 @@ public class StudentMapper {
         return Student.builder()
                 .name(studentCreationDto.getName())
                 .telephoneNumber(studentCreationDto.getTelephoneNumber())
+                .grade(studentCreationDto.getGrade())
+                .subject(studentCreationDto.getSubject())
+                .lessonCost(studentCreationDto.getLessonCost())
+                .meetingPoint(studentCreationDto.getMeetingPoint())
                 .build();
     }
 
@@ -21,6 +25,10 @@ public class StudentMapper {
                 .id(student.getId())
                 .name(student.getName())
                 .telephoneNumber(student.getTelephoneNumber())
+                .subject(student.getSubject())
+                .grade(student.getGrade())
+                .lessonCost(student.getLessonCost())
+                .meetingPoint(student.getMeetingPoint())
                 .parentDto(ParentMapper.makeParentDto(student.getParent()))
                 .build();
     }

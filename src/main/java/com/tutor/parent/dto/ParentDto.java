@@ -11,5 +11,4 @@ public class ParentDto {
 
     private String name;
     private String telephoneNumber;
-    private List<Integer> students;
 }
