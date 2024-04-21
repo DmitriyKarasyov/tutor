@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc0205a5-03b5-4491-a172-4023865b4d12" name="Changes" comment="add student update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutor/meetingPoint/model/MeetingPoint.java" afterDir="false" />
+    <list default="true" id="fc0205a5-03b5-4491-a172-4023865b4d12" name="Changes" comment="edit Student">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/parent/dto/ParentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/parent/dto/ParentDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/student/dto/StudentCreationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/student/dto/StudentCreationDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/student/dto/StudentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/student/dto/StudentDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/student/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/student/mapper/StudentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/student/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/student/model/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713295633548</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="edit Student">
+      <created>1713555912497</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713555912497</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,6 +167,7 @@
     <MESSAGE value="edit StudentController" />
     <MESSAGE value="add logging" />
     <MESSAGE value="add student update" />
-    <option name="LAST_COMMIT_MESSAGE" value="add student update" />
+    <MESSAGE value="edit Student" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit Student" />
   </component>
 </project>
