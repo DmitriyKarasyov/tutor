@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc0205a5-03b5-4491-a172-4023865b4d12" name="Changes" comment="edit Student">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="fc0205a5-03b5-4491-a172-4023865b4d12" name="Changes" comment="add schema.sql">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713555912497</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add schema.sql">
+      <created>1713729967278</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713729967278</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +173,7 @@
     <MESSAGE value="add logging" />
     <MESSAGE value="add student update" />
     <MESSAGE value="edit Student" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit Student" />
+    <MESSAGE value="add schema.sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="add schema.sql" />
   </component>
 </project>

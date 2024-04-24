@@ -9,4 +9,6 @@ CREATE TABLE IF NOT EXISTS students (
     subject VARCHAR(30),
     grade INTEGER,
 
+    lesson_cost FLOAT,
+    parent_id REFERENCES
 )
