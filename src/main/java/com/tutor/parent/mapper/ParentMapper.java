@@ -4,6 +4,7 @@ import com.tutor.parent.dto.ParentCreationDto;
 import com.tutor.parent.dto.ParentDto;
 import com.tutor.parent.model.Parent;
 import com.tutor.student.dto.StudentDto;
+import com.tutor.student.mapper.StudentMapper;
 import com.tutor.student.model.Student;
 import com.tutor.student.service.StudentService;
 import org.springframework.stereotype.Service;
@@ -33,8 +34,8 @@ public class ParentMapper {
         return ParentDto.builder()
                 .name(parent.getName())
                 .telephoneNumber(parent.getTelephoneNumber())
-                .students(parent.getStudents().stream()
-                                                    .map(Student :: getId)
+                .studentDtoList(parent.getStudents().stream()
+                                                    .map(StudentMapper :: makeStudentDto)
                                                     .collect(Collectors.toList()))
                 .build();
     }

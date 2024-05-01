@@ -8,7 +8,5 @@ CREATE TABLE IF NOT EXISTS students (
     telephone_number VARCHAR(30),
     subject VARCHAR(30),
     grade INTEGER,
-
-    lesson_cost FLOAT,
-    parent_id REFERENCES
+    lesson_cost FLOAT(5, 2),
 )

@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc0205a5-03b5-4491-a172-4023865b4d12" name="Changes" comment="add schema.sql">
+    <list default="true" id="fc0205a5-03b5-4491-a172-4023865b4d12" name="Changes" comment="edit schema.sql">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/parent/dto/ParentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/parent/dto/ParentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/parent/mapper/ParentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/parent/mapper/ParentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/student/dto/StudentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/student/dto/StudentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/student/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/student/mapper/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/student/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/student/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713729967278</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="edit schema.sql">
+      <created>1713992192935</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1713992192935</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +187,7 @@
     <MESSAGE value="add student update" />
     <MESSAGE value="edit Student" />
     <MESSAGE value="add schema.sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="add schema.sql" />
+    <MESSAGE value="edit schema.sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit schema.sql" />
   </component>
 </project>

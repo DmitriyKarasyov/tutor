@@ -5,6 +5,8 @@ import com.tutor.parent.model.Parent;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 @Builder
 public class Student {
@@ -16,5 +18,5 @@ public class Student {
     private Integer grade;
     private MeetingPoint meetingPoint;
     private Double lessonCost;
-    private Parent parent;
+    private List<Parent> parents;
 }

@@ -5,6 +5,8 @@ import com.tutor.parent.dto.ParentDto;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 @Builder
 public class StudentDto {
@@ -16,5 +18,5 @@ public class StudentDto {
     private Integer grade;
     private MeetingPoint meetingPoint;
     private Double lessonCost;
-    private ParentDto parentDto;
+    private List<ParentDto> parentDtoList;
 }

@@ -6,6 +6,8 @@ import com.tutor.student.dto.StudentDto;
 import com.tutor.student.model.Student;
 import org.springframework.stereotype.Service;
 
+import java.util.stream.Collectors;
+
 @Service
 public class StudentMapper {
 
@@ -29,7 +31,9 @@ public class StudentMapper {
                 .grade(student.getGrade())
                 .lessonCost(student.getLessonCost())
                 .meetingPoint(student.getMeetingPoint())
-                .parentDto(ParentMapper.makeParentDto(student.getParent()))
+                .parentDtoList(student.getParents().stream()
+                        .map(ParentMapper :: makeParentDto)
+                        .collect(Collectors.toList()))
                 .build();
     }
 }
