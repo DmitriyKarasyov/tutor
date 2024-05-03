@@ -24,6 +24,8 @@ public class Parent {
     private String name;
     @Column(name = "telephone_number")
     private String telephoneNumber;
-
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinTable(name = "students_parents", schema = "public",
+        joinColumns = {@JoinColumn(name = "parent_id")}, inverseJoinColumns = {@JoinColumn(name = "student_id")})
     private List<Student> students;
 }

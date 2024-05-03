@@ -18,3 +18,8 @@ CREATE TABLE IF NOT EXISTS parents (
     telephonr_number VARCHAR(40),
     CONSTRAINT pk_parents PRIMARY KEY (id)
 )
+
+CREATE TABLE IF NOT EXISTS students_parents (
+    student_id INTEGER NOT NULL,
+    parent_id INTEGER NOT NULL
+)
