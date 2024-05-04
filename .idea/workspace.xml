@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc0205a5-03b5-4491-a172-4023865b4d12" name="Changes" comment="map parent as entity">
+    <list default="true" id="fc0205a5-03b5-4491-a172-4023865b4d12" name="Changes" comment="add students_parents table, map student as entity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/parent/model/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/parent/model/Parent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/meetingPoint/model/MeetingPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/meetingPoint/model/MeetingPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutor/student/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutor/student/model/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
     </list>
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714678106889</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add students_parents table, map student as entity">
+      <created>1714765846894</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1714765846894</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +208,7 @@
     <MESSAGE value="edit schema.sql" />
     <MESSAGE value="edit parent and student models" />
     <MESSAGE value="map parent as entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="map parent as entity" />
+    <MESSAGE value="add students_parents table, map student as entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="add students_parents table, map student as entity" />
   </component>
 </project>

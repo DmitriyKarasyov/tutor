@@ -29,8 +29,10 @@ public class Student {
     private String subject;
     @Column(name = "grade")
     private Integer grade;
-
+    @OneToOne
+    @JoinColumn(name = "meeting_point_id")
     private MeetingPoint meetingPoint;
+    @Column(name = "lesson_cost")
     private Double lessonCost;
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(name = "students_parents", schema = "public",
