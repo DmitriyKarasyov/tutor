@@ -36,4 +36,9 @@ public class StudentServiceImpl implements StudentService {
         studentRepository.save(savedStudent);
         return StudentMapper.makeStudentDto(savedStudent);
     }
+
+    @Override
+    public void deleteStudent(Integer studentId) {
+        studentRepository.deleteById(studentId);
+    }
 }

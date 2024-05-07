@@ -10,4 +10,6 @@ public interface StudentService {
     StudentDto getStudent(Integer studentId);
 
     StudentDto updateStudent(Integer studentId, StudentDto studentDto);
+
+    void deleteStudent(Integer studentId);
 }

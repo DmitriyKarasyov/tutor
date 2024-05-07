@@ -36,4 +36,10 @@ public class StudentController {
         log.info("PATCH student with id={}, studentDto: {}", studentId, studentDto);
         return service.updateStudent(studentId, studentDto);
     }
+
+    @DeleteMapping("/{studentId}")
+    public void deleteStudent(@PathVariable Integer studentId) {
+        log.info("DELETE student with id={}", studentId);
+        service.deleteStudent(studentId);
+    }
 }
